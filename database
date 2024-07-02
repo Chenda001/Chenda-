@@ -1,13 +1,39 @@
- select * from emplloyee;  
+ drop database pwaniuni;
+create database pwaniuni;
+use pwaniuni;
 
-select * from salary;  
 
-select * from section; 
+create table employee( EmployeeNumber INT PRIMARY KEY,
+    FirstName varchar(50),
+    LastName varchar(50),
+    Address varchar(50),
+    SectionCode int,
+    emp_rank varchar(50)
+    );
+    select*from employee;
+    insert into employee values(101, 'Mark', 'Miller', 'Box 101', 1, 'Lecturer');
+    insert into employee values(102, 'Sarah', 'Johnson', 'Box 102', 2, 'Dean');
+    insert into employee values(103, 'James', 'Brown', 'Box 103', 1, 'senior_lecturer');
+    insert into employee values(104, 'Anna', 'Davis', 'Box 104', 2, 'secretary');
+ 
+create table section(SectionCode INT PRIMARY KEY,
+    SectionName varchar(50),
+    HeadOfSectionName varchar(50),
+    HeadOfSectionSignature varchar(50) 
+    
+    );
+    select*from section;
+    insert into section values(1, 'IT', 'John Doe', 'JDoe');
+    insert into section values(2, 'Finance', 'Jane Smith', 'JSmith');
+    insert into section values(3, 'sports', 'Daggy summit', 'dsummit');
+    insert into section values(4,'marketing','Manu jones','Mjones');
+    
+    create table sal_details(salary float, h_allowance float,travel_all float,medical_all float,PAYE float,nssf float,nhif float,loan float, net_salary float);
+select*from sal_details;
+insert into sal_details values(15000, 12000, 4000, 2000, 12000, 2000, 1000, 15000, 38000);
+insert into sal_details values(	20000, 12000, 4000, 2000, 12000, 2000, 1000, 5000, 42000);
+insert into sal_details values(	25000, 12000, 4000, 2000, 12000, 2000, 1000, 8000, 45000);
+insert into sal_details values(	30000, 12000, 4000, 2000, 12000, 2000, 1000, 10000, 49000);
 
-select * from emplloyee where empName like 'b%';
-
-select * from salary where netSalary  > '40000' ;
-
-select * from salary where netSalary between '20000' and '50000';
-
-update salarySET Total =BasicSal+houseAll+travelAll+medAll;
+alter table section
+add constraint EmployeeNumber foreign key(EmployeeNumber) references Employee(EmployeeNumber);
