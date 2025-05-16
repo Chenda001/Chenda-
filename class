@@ -1,0 +1,75 @@
+# Define the Attachee class
+class Attachee:
+    def __init__(self, name, skill_level):
+        self.name = name
+        self.skill_level = skill_level  # 'Exellent', 'Good', or 'Pass'
+        self.task = None
+        self.feedback = None
+        self.score = 0
+
+    def assign_task(self, task):
+        self.task = task
+
+    def receive_feedback(self, feedback, score):
+        self.feedback = feedback
+        self.score = score
+
+    def __str__(self):
+        return (f"Name: {self.name}, Skill: {self.skill_level}, Task: {self.task}, "
+                f"Feedback: {self.feedback}, Score: {self.score}")
+
+# Define the DivisionManager class
+class DivisionManager:
+    def __init__(self, division_name):
+        self.division_name = division_name
+        self.attachees = []
+
+    def add_attachee(self, attachee):
+        self.attachees.append(attachee)
+
+    def assign_tasks(self):
+        for attachee in self.attachees:
+            # Assign tasks based on skill level
+            if attachee.skill_level == 'Exellent':
+                attachee.assign_task('Lead a project')
+                attachee.receive_feedback('Excellent initiative', 90)
+            elif attachee.skill_level == 'Good':
+                attachee.assign_task('Assist in project')
+                attachee.receive_feedback('Good work, needs polish', 75)
+            elif attachee.skill_level == 'pass':
+                attachee.assign_task('Complete training modules')
+                attachee.receive_feedback('Needs improvement', 50)
+            else:
+                attachee.assign_task('No task assigned')
+                attachee.receive_feedback('Unknown skill level', 30)
+
+    def display_performance(self):
+        print(f"\nDivision: {self.division_name}")
+        print("-" * 40)
+        for attachee in self.attachees:
+            print(attachee)
+
+# Example usage
+if __name__ == "__main__":
+    # Create divisions
+    dev_division = DivisionManager("Engineering")
+    hr_division = DivisionManager("Radio Support")
+    # Create attachees
+    a1 = Attachee("Brenda", "Exellent")
+    a2 = Attachee("Faith", "Good")
+    a3 = Attachee("John", "Pass")
+    a4 = Attachee("Diana", "Fail")
+
+    # Assign attachees to divisions
+    dev_division.add_attachee(a1)
+    dev_division.add_attachee(a2)
+    hr_division.add_attachee(a3)
+    hr_division.add_attachee(a4)
+
+    # Assign tasks and give feedback
+    dev_division.assign_tasks()
+    hr_division.assign_tasks()
+
+    # Display performance
+    dev_division.display_performance()
+    hr_division.display_performance()
