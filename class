@@ -35,7 +35,7 @@ class DivisionManager:
                 attachee.receive_feedback('Excellent initiative', 90)
             elif attachee.skill_level == 'Good':
                 attachee.assign_task('Assist in project')
-                attachee.receive_feedback('Good work, needs polish', 75)
+                attachee.receive_feedback('Good work, needs polish', 76)
             elif attachee.skill_level == 'pass':
                 attachee.assign_task('Complete training modules')
                 attachee.receive_feedback('Needs improvement', 50)
