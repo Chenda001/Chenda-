@@ -3,7 +3,7 @@ create database pwaniuni;
 use pwaniuni;
 
 create table employee( EmployeeNumber INT PRIMARY KEY,
-    FirstName varchar(40),
+    FirstName varchar(50),
     LastName varchar(50),
     Address varchar(50),
     SectionCode int,
