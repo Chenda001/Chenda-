@@ -1,4 +1,4 @@
- drop database pwaniuni;
+drop database pwaniuni;
 create database pwaniuni;
 use pwaniuni;
 
