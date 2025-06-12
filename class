@@ -30,15 +30,22 @@ class DivisionManager:
     def assign_tasks(self):
         for attachee in self.attachees:
             # Assign tasks based on skill level
+            # score above 90, return excellent and lead a project
             if attachee.skill_level == 'Exellent':
                 attachee.assign_task('Lead a project')
                 attachee.receive_feedback('Excellent initiative', 90)
+
+            #score above 76 points, return good, assist in project
             elif attachee.skill_level == 'Good':
                 attachee.assign_task('Assist in project')
                 attachee.receive_feedback('Good work, needs polish', 76)
+
+            #score above 50, return pass and complete training modules
             elif attachee.skill_level == 'pass':
                 attachee.assign_task('Complete training modules')
                 attachee.receive_feedback('Needs improvement', 50)
+
+            #if score is less than 50% then return no task is assigned and unknown skill
             else:
                 attachee.assign_task('No task assigned')
                 attachee.receive_feedback('Unknown skill level', 30)
