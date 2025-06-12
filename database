@@ -1,6 +1,6 @@
-drop database pwaniuni;
-create database pwaniuni;
-use pwaniuni;
+ drop database pwaniuni;
+ create database pwaniuni;
+ use pwaniuni;
 
 create table employee( EmployeeNumber INT PRIMARY KEY,
     FirstName varchar(50),
