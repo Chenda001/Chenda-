@@ -12,8 +12,8 @@ create table employee( EmployeeNumber INT PRIMARY KEY,
     select*from employee;
     insert into employee values(10, 'Mark', 'Miller', 'Box 101', 1, 'Lecturer');
     insert into employee values(11, 'Sarah', 'Johnson', 'Box 102', 2, 'Dean');
-    insert into employee values(12, 'James', 'Brown', 'Box 103', 1, 'senior_lecturer');
-    insert into employee values(13, 'Anna', 'Davis', 'Box 104', 2, 'secretary');
+    insert into employee values(12, 'James', 'Brown', 'Box 103', 3, 'senior_lecturer');
+    insert into employee values(13, 'Anna', 'Davis', 'Box 104', 4, 'secretary');
  
 create table section(SectionCode INT PRIMARY KEY,
     SectionName varchar(50),
