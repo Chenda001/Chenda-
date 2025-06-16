@@ -10,7 +10,7 @@ public class CDACC {
         List<String> tasks = new ArrayList<>();
         Scanner scanner = new Scanner(System.in);
         while (true) {
-            System.out.println("CDACC - Daily Activity Scheduling Assistant");
+            System.out.println("My task plan");
            
   System.out.println("1. Add task");
   System.out.println("2. Mark task as completed");
