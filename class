@@ -37,7 +37,7 @@ class DivisionManager:
 
             #score above 76 points, return good, assist in project
             elif attachee.skill_level == 'Good':
-                attachee.assign_task('Assist in project')
+                attachee.assign_task ('Assist in project')
                 attachee.receive_feedback('Good work, needs polish', 78)
 
             #score above 50, return pass and complete training modules
