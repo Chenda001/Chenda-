@@ -59,10 +59,9 @@ System.out.println("Task not found in the list");
 import java.util.*;
 
 public class Reallife {
-
 public static void main(String[] args) {
 		
-int age[]={20,23,19,18,17,19,19,18,21,24,26,24,19,18,18,19};
+int age[]={20,23,19,18,17,19,19,18,21,24,26,17,24,19,18,18,19};
 	
 System.out.println(age.length);
   int max = Arrays.stream(age).max().getAsInt();
@@ -74,13 +73,13 @@ System.out.println(max);
  System.out.print(i + " ");
             
         }
-        //section to calculate the sum of the ages
+  //section to calculate the sum of the ages
         int sum = 0;
         for (int i = 0; i < age.length; i++) {
             sum += age[i];
         }
 System.out.print("\n\nThe sum is: " + sum);
         double avg = sum/age.length;
-        //calculates the avarage age of all the ages
+  //calculates the avarage age of all the ages
 System.out.println("\n\nThe avarage is: " + avg);
 	}
