@@ -6,7 +6,7 @@ import java.io.*;
 import java.util.*;
 
 public class CDACC {
-    public static void main(String[] args) {
+public static void main(String[] args) {
         List<String> tasks = new ArrayList<>();
         Scanner scanner = new Scanner(System.in);
         while (true) {
