@@ -25,7 +25,7 @@ create table section(SectionCode INT PRIMARY KEY,
     insert into section values(1, 'IT', 'John Doe', 'JDoe');
     insert into section values(2, 'Finance', 'Jane Smith', 'JSmith');
     insert into section values(3, 'sports', 'Daggy summit', 'dsummit');
-    insert into section values(4,'marketing','Manu jones','Mjones');
+    insert into section values(1,'marketing','Manu jones','Mjones');
     
     create table sal_details(salary float, h_allowance float,travel_all float,medical_all float,PAYE float,nssf float,nhif float,loan float, net_salary float);
 select*from sal_details;
