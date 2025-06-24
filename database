@@ -15,7 +15,7 @@ CREATE TABLE EMPLOYEE( EmployeeNumber INT PRIMARY KEY,
     insert into employee values(12, 'James', 'Brown', 'Box 103', 3, 'senior_lecturer');
     insert into employee values(13, 'Anna', 'Davis', 'Box 104', 1, 'secretary');
  
-create table section(SectionCode INT PRIMARY KEY,
+CREATE TABLE SECTIONn(SectionCode INT PRIMARY KEY,
     SectionName varchar(50),
     HeadOfSectionName varchar(50),
     HeadOfSectionSignature varchar(50) 
