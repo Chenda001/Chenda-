@@ -80,5 +80,6 @@ System.out.println(max);
 System.out.print("\n\nThe sum is: " + sum);
         double avg = sum/age.length;
   //calculates the avarage age of all the ages
+  
 System.out.println("\n\nThe avarage is: " + avg);
 	}
