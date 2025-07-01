@@ -24,6 +24,7 @@ public static void main(String[] args) {
          break;
       
       case 2:
+      
    System.out.print("Enter task number to mark as completed: ");
    int taskNumber = scanner.nextInt();
   
