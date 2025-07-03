@@ -27,7 +27,7 @@ CREATE TABLE SECTIONn(SectionCode INT PRIMARY KEY,
     insert into section values(3, 'sports', 'Daggy summit', 'dsummit');
     insert into section values(1,'marketing','Manu jones','Mjones');
     
-    create table sal_details(salary float, h_allowance float,travel_all float,medical_all float,PAYE float,nssf float,nhif float,loan float, net_salary float);
+  CREATE TABLE SAL_DETAILS(SALARY FLOAT, H_ALLOWANCE FLOAT, TRAVEL_ALL FLOAT, MEDICAL_ALL FLOAT, PAYE FLOAT,NSSF FLOAT,NHIF FLOAT, LOAN FLOAT, NET_SALARY FLOAT);
 select*from sal_details;
 insert into sal_details values(15000, 12000, 4000, 2000, 12000, 2000, 1000, 15000, 38000);
 insert into sal_details values(	20000, 12000, 4000, 2000, 12000, 2000, 1000, 5000, 42000);
