@@ -30,7 +30,7 @@ public static void main(String[] args) {
   
   if (tasks.contains(tasks.get(taskNumber - 1))) {
                         tasks.remove(tasks.get(taskNumber - 1));
-                        System.out.println("Task marked as completed");
+                        System.out.println("Task marked as completed") ;
 
  } else {
                     
