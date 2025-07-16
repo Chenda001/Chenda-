@@ -1,4 +1,6 @@
-import java.util.Arrays;
+// TaskManager/Statistics.java
+
+import java.util.*;
 
 public class Statistics {
     public static void main(String[] args) {
@@ -24,29 +26,5 @@ public class Statistics {
 
         double avg = (double) sum / ages.length;
         System.out.println("The average age is: " + avg);
-
-        // Median calculation
-        double median;
-        if (ages.length % 2 == 0) {
-            median = (ages[ages.length / 2 - 1] + ages[ages.length / 2]) / 2.0;
-        } else {
-            median = ages[ages.length / 2];
-        }
-        System.out.printf("Median age: %.2f%n", median);
-
-        // Mode calculation
-        int mode = ages[0], modeCount = 1, currentCount = 1;
-        for (int i = 1; i < ages.length; i++) {
-            if (ages[i] == ages[i - 1]) {
-                currentCount++;
-            } else {
-                currentCount = 1;
-            }
-            if (currentCount > modeCount) {
-                modeCount = currentCount;
-                mode = ages[i];
-            }
-        }
-        System.out.println("Mode age: " + mode);
     }
 }
