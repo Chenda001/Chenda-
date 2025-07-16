@@ -1,46 +1,41 @@
-import java.util.*;
+Hello 👋 
 
-public class RealLife {
-    public static void main(String[] args) {
-        int[] ages = {20, 23, 19, 18, 17, 19, 19, 18, 21, 24, 26, 17, 24, 19, 18, 18, 19};
+## TaskManagerS
 
-        System.out.println("Age Statistics Report");
-        System.out.println("--------------------------");
+### Attent
+Attent is a Java application designed to help users manage their daily tasks efficiently. It provides a menu-driven interface allowing users to:
+Add new tasks
+View all tasks
+Mark tasks as complete
+Exit the program
 
-        // Total count
-        System.out.println("Total number of ages: " + ages.length);
+**🔧 Key Features**
+- Task Creation: Users can enter a task description, which is stored in a list.
 
-        // Maximum age
-        int max = Arrays.stream(ages).max().orElse(-1);
-        System.out.println("Maximum age: " + max);
 
-        // Sort the ages
-        Arrays.sort(ages);
-        System.out.print("Sorted ages: ");
-        for (int age : ages) {
-            System.out.print(age + " ");
-        }
+- Task Viewing: All tasks are displayed with their status — either complete or incomplete.
 
-        // Sum and average
-        int sum = 0;
-        for (int age : ages) {
-            sum += age;
-        }
-        System.out.println("\nSum of ages: " + sum);
 
-        double avg = (double) sum / ages.length;
-        System.out.printf("Average age: %.2f%n", avg);
+- Task Completion: Users can select a task to mark as complete using its number from the list.
 
-        // Median
-        double median;
-        if (ages.length % 2 == 0) {
-            median = (ages[ages.length / 2 - 1] + ages[ages.length / 2]) / 2.0;
-        } else {
-            median = ages[ages.length / 2];
-        }
-        System.out.printf("Median age: %.2f%n", median);
 
-        System.out.println("--------------------------");
-        System.out.println(" End of Report");
-    }
-}
+- Exit Functionality: Users can gracefully exit the program when done.
+
+
+### Statistics
+Statistics is a Java program focused on performing statistical analysis on the ages provided.
+
+**Features:**
+- Total number of ages (count)
+- Sorted ages in ascending order
+- Sum of ages
+- Average age
+- Maximum and minimum age
+- Median of the ages
+- Mode of the ages
+
+the output is as follows:
+
+
+
+
