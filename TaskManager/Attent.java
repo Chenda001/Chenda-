@@ -2,7 +2,7 @@ package TaskManager;
 
 import java.util.*;
 
-public class Attachment {
+public class Attent {
     public static void main(String[] args) {
         List<Task> tasks = new ArrayList<>();
         Scanner scanner = new Scanner(System.in);
