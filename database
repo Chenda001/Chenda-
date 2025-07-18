@@ -9,6 +9,7 @@ CREATE TABLE EMPLOYEE( EmployeeNumber INT PRIMARY KEY,
     SectionCode int,
     emp_rank varchar(50)
     );
+
     select*from employee;
     insert into employee values(10, 'Mark', 'Miller', 'Box 101', 1, 'Lecturer');
     insert into employee values(11, 'Sarah', 'Johnson', 'Box 102', 2, 'Dean');
