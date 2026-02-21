@@ -3,7 +3,7 @@ Hello 👋
 ## TaskManager
 
 ### Attent
-Attent is a Java application designed to help users manage their daily tasks efficiently. It provides a menu-driven interface allowing users to:
+Attent is a Java application designed to help users manage their daily tasks efficiently without forgetting any task. It provides a menu-driven interface allowing users to:
 Add new tasks
 View all tasks
 Mark tasks as complete
