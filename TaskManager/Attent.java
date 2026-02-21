@@ -77,5 +77,8 @@ class Task {
 
     public void setCompleted(boolean completed) {
         this.completed = completed;
+
+        
+        <optional: add page numbers or custom footer on each page>
     }
 }
