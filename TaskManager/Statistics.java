@@ -26,5 +26,8 @@ public class Statistics {
 
         double avg = (double) sum / ages.length;
         System.out.println("The average age is: " + avg);
+        
+        <optional: add page numbers or custom footer on each page>
+        
     }
 }
