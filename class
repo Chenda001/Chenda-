@@ -63,9 +63,9 @@ if __name__ == "__main__":
     hr_division = DivisionManager("Radio Support")
     # Create attachees
     a1 = Attachee("Brenda", "Exellent")
-    a2 = Attachee("Faith", "Good")
-    a3 = Attachee("John", "Pass")
-    a4 = Attachee("Diana", "Fail")
+    a2 = Attachee("Shadrack", "Good")
+    a3 = Attachee("Becky", "Pass")
+    a4 = Attachee("Gladys", "Fail")
 
     # Assign attachees to divisions
     dev_division.add_attachee(a1)
